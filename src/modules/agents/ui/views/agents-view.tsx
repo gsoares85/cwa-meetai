@@ -3,6 +3,7 @@
 import {useTRPC} from "@/trpc/client";
 import {useSuspenseQuery} from "@tanstack/react-query";
 import {LoadingState} from "@/components/loading-state";
+import {ErrorState} from "@/components/error-state";
 
 export const AgentsView = () => {
     const trpc = useTRPC();
@@ -23,6 +24,6 @@ export const AgentsViewLoading = () => {
 
 export const AgentsViewError = () => {
     return (
-        <LoadingState title="Error loading Agents" description="Please try again later." />
+        <ErrorState title="Error loading Agents" description="Please try again later." />
     )
 }

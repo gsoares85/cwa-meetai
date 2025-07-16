@@ -45,12 +45,12 @@ const options = [
         )
     },
     {
-        id: MeetingsStatus.Cancelled,
-        value: MeetingsStatus.Cancelled,
+        id: MeetingsStatus.Canceled,
+        value: MeetingsStatus.Canceled,
         children: (
             <div className="flex items-center gap-x-2 capitalize">
                 <CircleXIcon />
-                {MeetingsStatus.Cancelled}
+                {MeetingsStatus.Canceled}
             </div>
         )
     }

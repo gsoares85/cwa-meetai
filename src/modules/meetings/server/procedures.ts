@@ -24,7 +24,7 @@ export const meetingsRouter = createTRPCRouter({
             MeetingsStatus.Active,
             MeetingsStatus.Completed,
             MeetingsStatus.Processing,
-            MeetingsStatus.Cancelled
+            MeetingsStatus.Canceled
         ]).nullish(),
     })).query(async ({ ctx, input }) => {
         const { search, page, pageSize, status, agentId } = input;
